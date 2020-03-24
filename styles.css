@@ -20,10 +20,11 @@ main{
     margin: 30px 0;
     
 }
+
 button{
     background: none;
     border: none;
-    color: #FF5E84;
+    color: #1f3b63;
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
@@ -33,11 +34,11 @@ button{
 
 button.fat{
     color: #FFFFFF;
-    background: #FF5E84;
+    background: #1f3b63;
     border-radius: 4px;
     
     height: 40px;
-    box-shadow: 0px 8px 16px rgba( 255,0,92, 0.16);
+    box-shadow: 0px 8px 16px rgba(63, 70, 163, 0.3);
 }
 button.fat:hover{
     text-decoration: none ;
@@ -60,10 +61,7 @@ p .description{
     text-align: center;
 
 } 
-#gride{
-   
 
-}
 .grid{
     display: flex;
     margin-bottom: 32px;
@@ -91,6 +89,17 @@ p .description{
     margin: 16px 0;
    
 }
+.grid a {
+
+    color: #1f3b63;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.grid a:hover{
+    text-decoration: underline;
+}
 
 #buttons{
     display: flex;
@@ -114,6 +123,7 @@ header img {
     height: 100vh;
     display:flex;
     justify-content: center;
+    transition: 300ms;
 }
 
 #modal .content {
@@ -158,6 +168,28 @@ form label {
     letter-spacing: 0.8px;
 }
 
+form a {
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff22;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    align-self: end;
+    text-decoration: none;
+    transition: 400ms;
+}
+
+form a:hover {
+    background: #FFF;
+    color:#1f3b63;
+    text-decoration: none;
+}
+
 form button {
     background: #FFF;
     width: 150px;
@@ -167,6 +199,7 @@ form button {
     color: #1f3b63;
     grid-column: 2;
     justify-self: end;
+    transition: 400ms;
     
 }
 
@@ -177,5 +210,6 @@ form button:hover{
 }
 
 #modal.hide {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
