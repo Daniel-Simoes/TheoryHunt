@@ -19,10 +19,10 @@
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 </main>
                 <seciton id="buttons">
-                    <button>Add A New Theory</button>
+                    <button onclick="onOff()">Add A New Theory</button>
                     <button class="fat">View Theorys</button>
                 </seciton>
-                <footer> With ❤️By Daniel Simões </footer>
+                <footer class="hide"> With ❤️By Daniel Simões </footer>
                 
             </section>
 
@@ -68,33 +68,38 @@
         </div>
         <!-- Modal -->
 
-        <div id="modal">
+        <div id="modal" class="hide">
             <div class="content">
                 <h1>New Idea</h1>
                 <form action="">
 
-                    <div id="input-wapper">
+                    <div id="input-wrapper">
                         <label for="title">Title of idea</label>
                         <input type="text" name="title">
                     </div>
 
-                    <div id="input-wapper">
+                    <div id="input-wrapper">
                         <label for="category">Category</label>
                         <input type="text" name="category">
                     </div>
-                    <div id="input-wapper">
+
+                    <div id="input-wrapper">
                         <label for="image">Image</label>
                         <input type="url" name="image"> 
                     </div>
-                    <div id="input-wapper">
+
+                    <div id="input-wrapper">
                         <label for="description">Description</label>
                         <textarea name="description" cols="30" rows="10"></textarea> 
                     </div>
-                    <div id="input-wapper">
+
+                    <div id="input-wrapper">
                         <label for="link">Idea Link</label>
                         <input type="url" name="link"> 
                     </div>
-        <button>Salve</button>
+
+                    <button>Salve</button>
+
                 </form>
             </div>
         </div>
