@@ -1,0 +1,103 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Theory Hunt</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    </header>
+    <body>
+        <div id="container">
+            <section id="intro">
+                <header>
+                    <img src="./img/nerd.png" alt="">
+                </header>
+                <main>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, 
+                    <strong>the industry's standard dummy</strong> text ever since the 1500s.</p>
+                    <p>Lorem Ipsum is simply dummy text of dard 0s.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </main>
+                <seciton id="buttons">
+                    <button>Add A New Theory</button>
+                    <button class="fat">View Theorys</button>
+                </seciton>
+                <footer> With ❤️By Daniel Simões </footer>
+                
+            </section>
+
+            <section id="gride">
+                <div class="grid">
+                    <img src="./img/naruto.png" alt="">
+                
+                    <div class="content">
+                        <h3>Criador de Naruto fala sobre morte de personagem em Boruto?</h3>
+                        <p>Animes - Naruto</p>
+                        <div class="description">
+                            Desde a estreia de Boruto: Naruto Next Generations, no mês passado, os fãs ficaram um pouco aterrorizados por um ninja em especial. E parece que essa questão vai seguir em pauta por boa parte do anime.
+                        </div>
+                        <a href="#">Ir para a Ideia</a>
+                    </div>
+                </div>
+                <div class="grid">
+                    <img src="./img/spiderman.png" alt="">
+                
+                    <div class="content">
+                        <h3>Homem-Aranha sugere que Homem de Ferro criou aranha que mordeu Peter</h3>
+                        <p>Marvel - Homem Aranha</p>
+                    <div class="description">
+                        Robert Downey Jr como Tony Stark e Tom Holland como Peter Parker em cena de Homem-Aranha: De Volta ao Lar
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+                <div class="grid">
+                    <img src="./img/batman.png" alt="">
+                
+                    <div class="content">
+                        <h3>relação entre Coringa de Joaquin Phoenix e Batman de Robert Pattinson</h3>
+                        <p>DC - Batman</p>
+                    <div class="description">
+                        A partir de uma possível indicação de Robert Pattinson, fã elaborou a teoria.
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+            </section>
+            
+        </div>
+        <!-- Modal -->
+
+        <div id="modal">
+            <div class="content">
+                <h1>New Idea</h1>
+                <form action="">
+
+                    <div id="input-wapper">
+                        <label for="title">Title of idea</label>
+                        <input type="text" name="title">
+                    </div>
+
+                    <div id="input-wapper">
+                        <label for="category">Category</label>
+                        <input type="text" name="category">
+                    </div>
+                    <div id="input-wapper">
+                        <label for="image">Image</label>
+                        <input type="url" name="image"> 
+                    </div>
+                    <div id="input-wapper">
+                        <label for="description">Description</label>
+                        <textarea name="description" cols="30" rows="10"></textarea> 
+                    </div>
+                    <div id="input-wapper">
+                        <label for="link">Idea Link</label>
+                        <input type="url" name="link"> 
+                    </div>
+        <button>Salve</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>

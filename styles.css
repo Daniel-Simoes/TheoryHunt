@@ -1,0 +1,102 @@
+body {
+    background: #e5e5e5;
+    color: #25282b;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+footer {
+    text-align: center;
+}
+#container{
+    width: 90%;
+    max-width: 1000px;
+    
+    display: flex;
+    margin: 50px auto;
+}
+main{
+    margin: 30px 0;
+    
+}
+button{
+    background: none;
+    border: none;
+    color: #FF5E84;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    width: 250px;
+}
+
+button.fat{
+    color: #FFFFFF;
+    background: #FF5E84;
+    border-radius: 4px;
+    
+    height: 40px;
+    box-shadow: 0px 8px 16px rgba( 255,0,92, 0.16);
+}
+button.fat:hover{
+    text-decoration: none ;
+}
+button:hover{
+    text-decoration: underline;
+}
+p .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+#intro{
+    width: 300px;
+    margin-right: 100px;
+}
+
+#buttons {
+    text-align: center;
+
+} 
+#gride{
+   
+
+}
+.grid{
+    display: flex;
+    margin-bottom: 32px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 16px -8px rgba( 1, 1, 1, 0.1);
+}
+
+.grid img {
+     width: 60px;
+     height: 60px;
+     margin-right: 32px;
+}
+.grid h3 {
+    margin: 0 ;
+}
+
+.grid p {
+    margin: 8px 0;
+    color: #777;
+}
+
+.grid .description {
+    margin: 16px 0;
+   
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+}
+
+header img {
+    width: 220px;
+    height: 220px;
+}
