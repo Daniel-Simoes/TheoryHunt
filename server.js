@@ -7,13 +7,19 @@
 server.use(express.static('public'))
 
 
+//nunjucks config
+const nunjucks = require('nunjucks');
+nunjucks.configure('views', {
+    express: server,
+})
+
 // The Router to get the HTML
  server.get('/', function(req, res) {
-    return res.sendFile(__dirname + '/index.html')
+    return res.render('index.html')
  })
 
  server.get('/theorys', function(req, res) {
-    return res.sendFile(__dirname + '/theorys.html')
+    return res.render('theorys.html')
  })
 
 
