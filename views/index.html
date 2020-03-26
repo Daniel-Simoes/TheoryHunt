@@ -10,10 +10,8 @@
         <div id="container">
             <section id="intro">
                 <header>
-                    <a href="/">
                         <img src="./img/nerd.png" alt="">
                         <span>Theory Hunt</span>
-                    </a>
                 </header>
                 <main>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, 
@@ -31,42 +29,19 @@
             </section>
 
             <section id="gride">
-                <div class="grid">
-                    <img src="./img/naruto.png" alt="">
-                
-                    <div class="content">
-                        <h3>Criador de Naruto fala sobre morte de personagem em Boruto?</h3>
-                        <p>Animes - Naruto</p>
-                        <div class="description">
-                            Desde a estreia de Boruto: Naruto Next Generations, no mês passado, os fãs ficaram um pouco aterrorizados por um ninja em especial.
+                    {% for theory in theorys %}
+                        <div class="grid">
+                            <img src="{{theory.img}}" alt="">
+                            <div class="content">
+                                <h3>{{theory.title}}</h3>
+                                <p>{{theory.category}}</p>
+                                <div class="description">
+                                    {{theory.description}}
+                                </div>
+                                <a href="{{theory.url}}" target="_black">Ir para a Ideia</a>
+                            </div>
                         </div>
-                        <a href="#">Ir para a Ideia</a>
-                    </div>
-                </div>
-                <div class="grid">
-                    <img src="./img/spiderman.png" alt="">
-                
-                    <div class="content">
-                        <h3>Homem-Aranha sugere que Homem de Ferro criou aranha que mordeu Peter</h3>
-                        <p>Marvel - Homem Aranha</p>
-                    <div class="description">
-                        Robert Downey Jr como Tony Stark e Tom Holland como Peter Parker em cena de Homem-Aranha: De Volta ao Lar.
-                    </div>
-                    <a href="#">Ir para a Ideia</a>
-                </div>
-            </div>
-                <div class="grid">
-                    <img src="./img/batman.png" alt="">
-                
-                    <div class="content">
-                        <h3>relação entre Coringa de Joaquin Phoenix e Batman de Robert Pattinson</h3>
-                        <p>DC - Batman</p>
-                    <div class="description">
-                        A partir de uma possível indicação de Robert Pattinson, fã elaborou a teoria.
-                    </div>
-                    <a href="#">Ir para a Ideia</a>
-                </div>
-            </div>
+                    {% endfor %}
             </section>
             
         </div>
