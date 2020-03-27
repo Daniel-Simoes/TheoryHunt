@@ -3,6 +3,10 @@
  const express = require('express');
  const server =  express()
 
+ const db = require('./db')
+
+
+/*
 const theorys = [
     {
         img:'./img/naruto.png',
@@ -37,6 +41,8 @@ const theorys = [
     },
 
 ]
+*/
+
 
 //Fix statics files (CSS, SCRIPTS and IMAGENS)
 server.use(express.static('public'))
@@ -49,25 +55,40 @@ nunjucks.configure('views', {
     noCache: true,
 })
 
-// The Router to get the HTML
- server.get('/', function(req, res) {
+        // The Router to get the HTML
+        server.get('/', function(req, res) {
 
-    const reverseTheorys = [...theorys].reverse()
+                //SHOW TABLES by DB.js
 
-    let lastTheorys = []
-    for (let theory of reverseTheorys) {
-        if(lastTheorys.length < 3) {
-            lastTheorys.push(theory)
-        }
-    }
-    return res.render('index.html', { theorys: lastTheorys })
- })
+            db.all(`SELECT * FROM theories`, function(err, rows) {
+                if (err) return console.log(err)
+
+                const reverseTheorys = [...rows].reverse()
+
+                let lastTheorys = []
+                for (let theory of reverseTheorys) {
+                    if(lastTheorys.length < 3) {
+                        lastTheorys.push(theory)
+                    }
+                }
+
+                return res.render('index.html', { theorys: lastTheorys })
+            })
+        
+        })
 
  server.get('/theorys', function(req, res) {
 
-    const reverseTheorys = [...theorys].reverse()
 
-    return res.render('theorys.html', {theorys: reverseTheorys})
+    db.all(`SELECT * FROM theories`, function(err, rows) {
+        if (err) return console.log(err)
+        const reverseTheorys = [...rows].reverse()
+
+        return res.render('theorys.html', {theorys: reverseTheorys})
+
+    })
+
+    
  })
 
 

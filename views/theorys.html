@@ -32,14 +32,14 @@
         <section id="gride">
             {% for theory in theorys %}
                         <div class="grid">
-                            <img src="{{theory.img}}" alt="">
+                            <img src="{{theory.image}}" alt="">
                             <div class="content">
                                 <h3>{{theory.title}}</h3>
                                 <p>{{theory.category}}</p>
                                 <div class="description">
                                     {{theory.description}}
                                 </div>
-                                <a href="{{theory.url}}" target="_black">Go to Theory</a>
+                                <a href="{{theory.link}}" target="_black">Go to Theory</a>
                             </div>
                         </div>
                     {% endfor %}
