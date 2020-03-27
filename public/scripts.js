@@ -25,7 +25,7 @@ function checkFields(event) {
         "link",
     ]
 
-    const isEmpty = valuesToCheck.fild(function(value) {
+    const isEmpty = valuesToCheck.find(function(value) {
 
         const checkIfIsString = typeof event.target[value].value === "string"
         const checkIsEmpty = !event.target[value].value.trim()
