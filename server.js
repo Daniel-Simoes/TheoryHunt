@@ -3,7 +3,6 @@
  const express = require('express');
  const server =  express()
 
-
 const theorys = [
     {
         img:'./img/naruto.png',
@@ -38,7 +37,6 @@ const theorys = [
     },
 
 ]
-
 
 //Fix statics files (CSS, SCRIPTS and IMAGENS)
 server.use(express.static('public'))

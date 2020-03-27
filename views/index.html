@@ -45,43 +45,9 @@
             </section>
             
         </div>
-        <!-- Modal -->
+        
+        {% include "modal.html" %}
 
-        <div id="modal" class="hide">
-            <div class="content">
-                <h1>New Idea</h1>
-                <form action="">
-
-                    <div id="input-wrapper">
-                        <label for="title">Title of idea</label>
-                        <input type="text" name="title">
-                    </div>
-
-                    <div id="input-wrapper">
-                        <label for="category">Category</label>
-                        <input type="text" name="category">
-                    </div>
-
-                    <div id="input-wrapper">
-                        <label for="image">Image</label>
-                        <input type="url" name="image"> 
-                    </div>
-
-                    <div id="input-wrapper">
-                        <label for="description">Description</label>
-                        <textarea name="description" cols="30" rows="10"></textarea> 
-                    </div>
-
-                    <div id="input-wrapper">
-                        <label for="link">Idea Link</label>
-                        <input type="url" name="link"> 
-                    </div>
-                    <a href="# " onclick="onOff()">voltar</a>
-                    <button>Salve</button>
-
-                </form>
-            </div>
-        </div>
         <script src="/scripts.js"></script>
     </body>
     
