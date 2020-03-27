@@ -47,6 +47,8 @@ const theorys = [
 //Fix statics files (CSS, SCRIPTS and IMAGENS)
 server.use(express.static('public'))
 
+//Fix express to use req.body from Post method
+server.use(express.urlencoded({extended:true}))
 
 //nunjucks config
 const nunjucks = require('nunjucks')
@@ -56,12 +58,15 @@ nunjucks.configure('views', {
 })
 
         // The Router to get the HTML
-        server.get('/', function(req, res) {
+server.get('/', function(req, res) {
 
                 //SHOW TABLES by DB.js
 
             db.all(`SELECT * FROM theories`, function(err, rows) {
-                if (err) return console.log(err)
+                if (err) {
+                    console.log(err)
+                    return res.send('Sorry About That, But we had a problem with us Database!')
+                }
 
                 const reverseTheorys = [...rows].reverse()
 
@@ -75,13 +80,17 @@ nunjucks.configure('views', {
                 return res.render('index.html', { theorys: lastTheorys })
             })
         
-        })
+})
 
- server.get('/theorys', function(req, res) {
+server.get('/theorys', function(req, res) {
 
 
     db.all(`SELECT * FROM theories`, function(err, rows) {
-        if (err) return console.log(err)
+        if (err) {
+            console.log(err)
+            return res.send('Sorry About That, But we had a problem with us Database!')
+        }
+
         const reverseTheorys = [...rows].reverse()
 
         return res.render('theorys.html', {theorys: reverseTheorys})
@@ -91,6 +100,9 @@ nunjucks.configure('views', {
     
  })
 
+server.post('/', function(req, res){
+
+})
 
  // Server Door
  server.listen(3000)
