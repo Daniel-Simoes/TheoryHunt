@@ -6,33 +6,33 @@
 const theorys = [
     {
         img:'./img/naruto.png',
-        title:'Criador de Naruto fala sobre morte de personagem em Boruto?',
+        title:'Naruto creator talks about character death in Boruto.',
         category:'Animes - Naruto',
-        description:'Desde a estreia de Boruto: Naruto Next Generations, no mês passado, os fãs ficaram um pouco aterrorizados por um ninja em especial.',
+        description:"Since Boruto's last episode: the fans have been a little terrified of one particular ninja.",
         url:'',
     },
 
     {
         img:'./img/spiderman.png',
-        title:'Homem-Aranha sugere que Homem de Ferro criou aranha que mordeu Peter',
-        category:'Marvel - Homem Aranha',
+        title:'Spider-Man suggests that Iron Man created a spider that bit Peter.',
+        category:'Marvel - Spider-Man',
         description:'Robert Downey Jr como Tony Stark e Tom Holland como Peter Parker em cena de Homem-Aranha: De Volta ao Lar.',
         url:'',
     },
 
     {
         img:'./img/batman.png',
-        title:'Relação entre Coringa de Joaquin Phoenix e Batman de Robert Pattinson',
+        title:"Relationship between Joaquin Phoenix's Joker and Robert Pattinson's Batman.",
         category:'DC - Batman',
-        description:'A partir de uma possível indicação de Robert Pattinson, fã elaborou a teoria. ',
+        description:'From a possible indication by Robert Pattinson, a fan elaborated the theory.',
         url:'',
     },
 
     {
         img:'./img/pokemon.png',
-        title:'Os Pokémons também são usados como alimento pelos humanos!',
+        title:'Pokémon are also used as food by humans.',
         category:'Animes - Pokémon',
-        description:'De acordo com o CBR, um episódio da primeira geração do anime Pokémon revela a inconveniente verdade.',
+        description:'According to CBR, an episode of the first generation of the Pokémon anime reveals the inconvenient truth.',
         url:'',
     },
 
