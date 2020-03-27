@@ -101,6 +101,33 @@ server.get('/theorys', function(req, res) {
  })
 
 server.post('/', function(req, res){
+//INSERT DATA TO TABLE
+
+const query = `
+    INSERT INTO theories (
+        image,
+        title,
+        category,
+        description,
+        link
+    ) VALUES (?,?,?,?,?);
+    `
+const values = [
+    req.body.image,
+    req.body.title,
+    req.body.category,
+    req.body.description,
+    req.body.link
+
+]
+
+db.run(query, values, function(err) {
+    if (err) {
+        console.log(err)
+        return res.send('Sorry About That, But we had a problem with us Database!')
+    }
+    return res.redirect('/theorys')
+})
 
 })
 
