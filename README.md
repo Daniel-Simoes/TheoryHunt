@@ -11,7 +11,7 @@ HereYou can post all the information of your theories and through a link who wan
 ## 💻 Web Apresentation
 
 <p align="center">
-  <img alt="TheoryHunt Desktop Gif" src="https://github.com/Daniel-Simoes/TheoryHunt/blob/master/theoryHuntDesktop.png">
+  <img alt="TheoryHunt Desktop" src="https://github.com/Daniel-Simoes/TheoryHunt/blob/master/theoryHuntDesktop.png">
 </p>
 
 ## :rocket:TheoryHunt Web Installation
