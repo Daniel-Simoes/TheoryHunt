@@ -15,9 +15,9 @@
             link TEXT
         );
     `)
-/* 
+ 
     //INSERT DATA TO TABLE
-
+/*
         const query = `
         INSERT INTO theories (
             image,
@@ -45,11 +45,11 @@
 
         //DELETE TABLE
 
-        //db.run(`DELETE FROM theories WHERE id  = ?`, [1], function(err) {
-          //  if (err) return console.log(err)
+        db.run(`DELETE FROM theories WHERE id  = ?`, [9], function(err) {
+            if (err) return console.log(err)
     
-            //console.log("Deleted", this)
-        //})
+            console.log("Deleted", this)
+        })
 
 
 
@@ -60,6 +60,7 @@
 
         console.log(rows)
     })
+
 */
  })
 
