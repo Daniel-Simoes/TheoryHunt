@@ -41,12 +41,17 @@ This project was developed with the following technologies:
 - [ReactJS](https://facebook.github.io/react/)
 - [Babel](https://babeljs.io/)
 - [Webpack](https://webpack.js.org/)
+- [express](https://expressjs.com/)
+- [nodemon](https://nodemon.io/)
+- [nunjucks](https://www.npmjs.com/package/nunjucks)
+- [sqlite3](https://www.sqlite.org/)
 - [Prettier](https://prettier.io/)
 - [VS Code](https://code.visualstudio.com/) with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/giovanniantonaccio/Rocketshoes/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE]
 
 
 ## 🤔 How to contribute
